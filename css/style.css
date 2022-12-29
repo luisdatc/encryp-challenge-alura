@@ -116,6 +116,7 @@ body {
   width: 100%;
   padding: 1.5rem;
   align-self: flex-end;
+  display: none;
 }
 
 .main-column2-div-button {
@@ -139,6 +140,10 @@ body {
     padding: 2.5rem 0;
   }
 
+  #imgDer {
+    display: none;
+  }
+
   .label1 {
     font-size: 2rem;
   }
@@ -158,6 +163,10 @@ body {
   .main-column2-text,
   .main-column2-div-button {
     padding: 0rem;
+  }
+
+  #imgDer {
+    display: none;
   }
 
   .label1 {

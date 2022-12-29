@@ -21,17 +21,22 @@
             class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 main-column1"
           >
             <div class="navbar-logo">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="" class="img-fluid" />
+              <a class="navbar-brand" href="#" id="mainimg">
+                <img
+                  src="images/logo.png"
+                  alt="Logo Alura"
+                  class="img-fluid"
+                />
               </a>
             </div>
             <div class="form-floating">
               <textarea
                 name=""
-                id=""
+                id="main-textarea"
                 cols="30"
                 rows="30"
-                placeholder="Ingrese el texto a encriptar aca..." class="textarea1"
+                placeholder="Ingrese el texto a encriptar aca..."
+                class="textarea1"
               ></textarea>
               <!--               <textarea
                 name="encriptar"
@@ -54,10 +59,18 @@
                 <p>Solo letras min&uacute;sculas y sin acentos.</p>
               </div>
               <div class="main-column1-buttons">
-                <button type="submit" class="main-column1-buttons-1">
+                <button
+                  type="submit"
+                  class="main-column1-buttons-1"
+                  onclick="encriptar()"
+                >
                   Encriptar
                 </button>
-                <button type="submit" class="main-column1-buttons-2">
+                <button
+                  type="submit"
+                  class="main-column1-buttons-2"
+                  onclick="desencriptar()"
+                >
                   Desencriptar
                 </button>
               </div>
@@ -67,13 +80,14 @@
             <div class="main-column2-text">
               <img
                 src="images/Muñeco.png"
-                alt="Persona con una Lupa"
-                class="img-fluid d-none d-lg-block d-xl-block"
+                alt="Persona mirando un diamante con una lupa"
+                class="img-fluid"
+                id="imgDer"
               />
-              <h1>Ning&uacute;n mensaje fue encontrado.</h1>
+              <h1 id="no-text">Ning&uacute;n mensaje fue encontrado.</h1>
               <textarea
                 name=""
-                id=""
+                id="second-textarea"
                 cols="30"
                 rows="13"
                 placeholder="Ingresa el texto que deseas encriptar o desencriptar."
@@ -82,7 +96,13 @@
  -->
             </div>
             <div class="main-column2-div-button">
-              <button class="main-column2-button">Copiar</button>
+              <button
+                class="main-column2-button"
+                id="copiar"
+                onclick="copiar()"
+              >
+                Copiar
+              </button>
             </div>
           </div>
         </div>
