@@ -19,7 +19,6 @@ body {
 }
 
 /* COLUMNA 1 */
-
 .navbar-logo {
   padding: 2.5rem /* 5.25rem */;
   width: 100%;
@@ -38,18 +37,12 @@ body {
   font-style: normal;
   font-weight: 400;
   width: 100%;
+  font-size: 2rem;
   resize: none;
-}
-
-.label1 {
-  font-size: 3rem;
-  color: #0a3871;
-  font-weight: 400;
-}
-
-.form-control {
   border: none;
-  background-color: transparent;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0px 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.08);
 }
 
 .main-column1-exclamation-flex {
@@ -78,7 +71,6 @@ body {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.1875rem;
   background: #0a3871;
   border: none;
   border-radius: 1.5rem;
@@ -104,8 +96,20 @@ body {
   border-radius: 2rem;
 }
 
+#imgDer{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
 .main-column2-text {
   padding-top: 5rem;
+padding: 0 0.5rem;
+}
+
+#no-text{
+    font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .main-column2-button {
@@ -115,13 +119,23 @@ body {
   color: #0a3871;
   width: 100%;
   padding: 1.5rem;
-  align-self: flex-end;
   display: none;
+}
+
+.second-textarea {
+  border: none;
+  resize: none;
+  padding: 1rem 0;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .main-column2-div-button {
   width: 100%;
-  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -144,8 +158,13 @@ body {
     display: none;
   }
 
-  .label1 {
-    font-size: 2rem;
+  .main-column2-div-button {
+    width: 50%;
+    padding: 2.5rem 1.5rem 3rem 1.5rem;
+  }
+
+  .second-textarea{
+    width: 35rem;
   }
 }
 
@@ -169,7 +188,8 @@ body {
     display: none;
   }
 
-  .label1 {
-    font-size: 1rem;
+  .main-column2-div-button {
+    width: 80%;
+    padding: 2.5rem 1.5rem 3rem 1.5rem;
   }
 }
