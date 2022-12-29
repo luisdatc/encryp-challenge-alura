@@ -96,6 +96,17 @@ body {
   border-radius: 2rem;
 }
 
+.navbar-brand{
+  font-size: 1.5rem;
+  color: #0a3871;
+  font-weight: 700;
+}
+
+.navbar-brand img{
+  padding-right: 1rem;
+}
+
+
 #imgDer{
   padding-top: 4rem;
   padding-bottom: 2rem;
